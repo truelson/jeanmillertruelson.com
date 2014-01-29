@@ -1,54 +1,65 @@
+$full-page-width: 960px
 $side-section-width: 240px
 $off-white: #ddd
+$near-white: #eee
 $background-gray: #aaa
 $off-gray: #444
 
 body
-  width: 960px
   background-color: $background-gray
   font-family: Avenir, Nunito, sans-serif
 
-.header
+ul
+  padding-left: 20px
 
-.contact
-  display: inline-block
-  width: 220px
-  font-weight: 200
-  font-size: 14px
-  text-align: right
-  color: $off-gray
+.resume
+  width: $full-page-width
 
 h1
   display: inline-block
+  width: $full-page-width - $side-section-width
   margin: 0 10px 0 20px
-  padding: 50px 0 0px 0px
-  width: 200px
-  color: $off-white
+  padding: 50px 0 0px 220px
+  color: $near-white
+  border-style: solid
+  border-width: 0 0 1px 0
+  border-color: black
   font-family: Raleway
   font-weight: 100
   font-size: 48px
   letter-spacing: -1px
 
+.contact
+  display: inline-block
+  float: left
+  width: 220px
+  margin-top: 10px
+  color: $off-white
+  font-weight: 200
+  font-size: 14px
+  text-align: right
+
 .subheaders
   display: inline-block
-  margin: 5px 0 0 $side-section-width
+  margin: 5px 0 0 20px
   width: 720px
   text-align: justify
 
   .first-subheader
     margin: 0
-    font-weight: normal
-    font-size: 24px
+    font-weight: bold
+    font-size: 22px
     text-align: justify
+
   .first-subheader::after
     content: ""
     display: inline-block
     width: 100%
 
   .second-subheader
-    margin: -35px 0 0 0
+    margin: -28px 0 0 0
+    font-weight: bold
     font-size: 18px
-    font-weight: normal
     text-align: justify
 
   .second-subheader::after
@@ -86,8 +97,8 @@ h1
     width: 100%
     margin: 0
 
-ul
-  padding-left: 20px
+  ul
+    margin-top: 0
 
 .competency
   width: 350px
@@ -95,7 +106,23 @@ ul
 .quote
   width: 200px
   margin: 10px
+  margin-right: 0
   float: right
 
 .actual-quote
   text-align: justify
+
+.quote-owner
+  font-weight: bold
+
+.position
+  color: $off-white
+  font-style: italic
+
+.timeline
+  color: $off-white
+  font-style: italic
+
+.company
+  font-weight: bold
+
