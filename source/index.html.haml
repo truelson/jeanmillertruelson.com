@@ -1,55 +1,62 @@
-.resume
-  .header
+.header
+  .title-section
     %h1
       Jean Miller Truelson
 
-  .contact
-    .address
-      2546 3rd St. #1
-    .city-zip
-      San Francisco, CA 94107
-    .phone
-      415-652-2234
-    .linked-in
-      = link_to "in/jeankmiller", "http://www.linkedin.com/in/jeankmiller"
-    .email
-      jean[at]dogpatchtech.com
+    %nav
+      %ul
+        %li
+          = link_to "Home", "#home", class: "home-link nav-link", "data-class" => "home"
+        %li
+          = link_to "Skills", "#skills", class: "skills-link nav-link", "data-class" => "skills"
+        %li
+          = link_to "Experience", "#experience", class: "experience-link nav-link", "data-class" => "experience"
+        %li
+          = link_to "Education", "#education", class: "education-link nav-link", "data-class" => "education"
+        %li
+          = link_to "Speaking", "#speaking", class: "speaking-link nav-link", "data-class" => "speaking"
+        %li
+          = link_to "Contact", "#contact", class: "contact-link nav-link", "data-class" => "contact"
 
-  .subheaders
-    .first-subheader
-      Global Communications Leader │ Online Content Development
-    .second-subheader
-      Communications Initiatives | Marketing Strategy | Global Speaker | Implementation
+.resume
 
   .doc
-    .overview.page
-      %p.blurb
-        Communications, marketing, and strategic program/project implementation leader wielding expertise in international and multicultural environments and strong understanding of startup operations, organizational development, and strategic partnerships that drive international business development.
-      %p.blurb
-        Develop and mobilize online-centric global marketing programs, projects, and tactics with deep knowledge of communications sciences and proven ability to educate and empower internal staff, clients, online communities and government agencies regarding seamless adoption of initiatives.
+    .home.page
 
-    .competencies.page
+    .skills.page
       .side-section
         Core Competencies
-      .main-section
-        %table
-          %tr
-            %td.competency • Global Business/Market Development
-            %td.competency • Digital Strategy Consultant | Digital Technology
-          %tr
-            %td.competency • International Organizational Strategy
-            %td.competency • Intercultural Communications Management
-          %tr
-            %td.competency • Public Speaking Expert | Public Relations
-            %td.competency • Project/Program Implementation Planning
-          %tr
-            %td.competency • Web Presence | Social Networking | Content
-            %td.competency • Develop Sales and Marketing Programs
-          %tr
-            %td.competency • Analytics—Competitive, Marketing, Forecasting
-            %td.competency • Articulate and Persuasive Communicator
 
-    .jobs.page
+      .main-section
+        .subheaders
+          .first-subheader
+            Global Communications Leader │ Online Content Development
+          .second-subheader
+            Communications Initiatives | Marketing Strategy | Global Speaker | Implementation
+        %p.blurb
+          Communications, marketing, and strategic program/project implementation leader wielding expertise in international and multicultural environments and strong understanding of startup operations, organizational development, and strategic partnerships that drive international business development.
+        %p.blurb
+          Develop and mobilize online-centric global marketing programs, projects, and tactics with deep knowledge of communications sciences and proven ability to educate and empower internal staff, clients, online communities and government agencies regarding seamless adoption of initiatives.
+
+        .table-section
+          %table
+            %tr
+              %td.competency • Global Business/Market Development
+              %td.competency • Digital Strategy Consultant | Digital Technology
+            %tr
+              %td.competency • International Organizational Strategy
+              %td.competency • Intercultural Communications Management
+            %tr
+              %td.competency • Public Speaking Expert | Public Relations
+              %td.competency • Project/Program Implementation Planning
+            %tr
+              %td.competency • Web Presence | Social Networking | Content
+              %td.competency • Develop Sales and Marketing Programs
+            %tr
+              %td.competency • Analytics—Competitive, Marketing, Forecasting
+              %td.competency • Articulate and Persuasive Communicator
+
+    .experience.page
       .side-section
         Professional Experience
 
@@ -179,7 +186,7 @@
               %em Bachelor of Science in Foreign Service—Emphasis: Regional & Comparative Studies of Europe & Asia
               %em Foreign Service Language Proficiency: German
 
-    .speaking-engagements.page
+    .speaking.page
 
       .side-section
         Speaking Engagemnts
@@ -302,3 +309,18 @@
             %em
               “Reinventing Public Diplomacy through Games,”
             Games For Change, New York City, NY, USA, October, 2005
+
+    .contact.page
+      .side-section
+        Contact
+      .main-section
+        .address
+          2546 3rd St. #1
+        .city-zip
+          San Francisco, CA 94107
+        .phone
+          415-652-2234
+        .linked-in
+          = link_to "in/jeanmillertruelson", "http://www.linkedin.com/in/jeanmillertruelson"
+        .email
+          jean[at]dogpatchtech.com

@@ -1,7 +1,7 @@
-$full-page-width: 960px
-$side-section-width: 240px
+$full-page-width: 640px
 $title-color: #eee
 $heading-color: #eee
+$secondary-color: #111
 $background-color: #aaa
 
 body
@@ -9,88 +9,75 @@ body
   font-family: Avenir, Nunito, sans-serif
 
 ul
-  padding-left: 20px
+  padding: 0 10px
 
 .resume
   width: $full-page-width
+  margin: 0 auto
+
+.header
+  background-color: $secondary-color
+  text-align: center
+
+.title-section
+  width: $full-page-width
+  margin: 0 auto
 
 h1
   display: inline-block
-  width: $full-page-width - $side-section-width
-  margin: 0 10px 0 20px
-  padding: 50px 0 0px 220px
+  width: 100%
+  margin: 0
+  padding: 10px 10px 0 20px
   color: $title-color
-  border-style: solid
-  border-width: 0 0 1px 0
-  border-color: black
+  text-align: left
   font-family: Raleway
   font-weight: 100
   font-size: 48px
   letter-spacing: -1px
 
-.contact
+nav
   display: inline-block
-  float: left
-  width: 220px
-  margin-top: 10px
-  color: $heading-color
-  font-weight: 200
-  font-size: 14px
-  text-align: right
+  width: 100%
+  margin: -8px 0px 0px 0px
+  text-align: left
 
-  a
-    color: $heading-color
+  ul
+    margin: 6px 0
+
+  li
+    display: inline-block
+    margin: 0 10px
+
+    a
+      color: $heading-color
+      text-decoration: none
 
 .subheaders
   display: inline-block
-  margin: 5px 0 0 20px
-  width: 720px
-  text-align: justify
 
   .first-subheader
     margin: 0
     font-weight: bold
-    font-size: 22px
-    text-align: justify
-
-  .first-subheader::after
-    content: ""
-    display: inline-block
-    width: 100%
+    font-size: 19px
 
   .second-subheader
-    margin: -28px 0 0 0
+    margin: 0
     font-weight: bold
-    font-size: 17px
-    text-align: justify
-
-  .second-subheader::after
-    content: ""
-    display: inline-block
-    width: 100%
+    font-size: 15px
 
 .doc
   font-size: 14px
   margin: 0
-  margin-top: -30px
 
-.blurb
-  margin-left: $side-section-width
-  text-align: justify
-
-.competencies, .jobs, .education, .speaking-engagements
+.page
+  display: none
   margin-top: 10px
 
 .side-section
-  display: inline-block
-  width: 220px
-  color: $heading-color
-  vertical-align: top
-  text-align: right
+  display: none
 
 .main-section
   display: inline-block
-  width: 700px
   margin: 0 10px 0 20px
   text-align: left
   vertical-align: top
@@ -98,6 +85,7 @@ h1
   table
     width: 100%
     margin: 0
+    font-size: 13px
 
   ul
     margin-top: 0
@@ -112,10 +100,11 @@ h1
   float: right
 
 .actual-quote
-  text-align: justify
+  text-align: right
 
 .quote-owner
   font-weight: bold
+  text-align: right
 
 .position
   color: $heading-color
@@ -128,3 +117,9 @@ h1
 .company
   font-weight: bold
 
+.contact
+  margin-top: 10px
+
+  a
+    color: $heading-color
+    text-decoration: none
