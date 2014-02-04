@@ -6,24 +6,22 @@
     %nav
       %ul
         %li
-          = link_to "Home", "#home", class: "home-link nav-link", "data-class" => "home"
+          = link_to "Home", "#home", class: "home-link nav-link"
         %li
-          = link_to "Skills", "#skills", class: "skills-link nav-link", "data-class" => "skills"
+          = link_to "Experience", "#experience", class: "experience-link nav-link"
         %li
-          = link_to "Experience", "#experience", class: "experience-link nav-link", "data-class" => "experience"
+          = link_to "Education", "#education", class: "education-link nav-link"
         %li
-          = link_to "Education", "#education", class: "education-link nav-link", "data-class" => "education"
+          = link_to "Speaking", "#speaking", class: "speaking-link nav-link"
         %li
-          = link_to "Speaking", "#speaking", class: "speaking-link nav-link", "data-class" => "speaking"
+          = link_to "Personal", "#personal", class: "personal-link nav-link"
         %li
-          = link_to "Contact", "#contact", class: "contact-link nav-link", "data-class" => "contact"
+          = link_to "Contact", "#contact", class: "contact-link nav-link"
 
 .resume
 
   .doc
     .home.page
-
-    .skills.page
       .side-section
         Core Competencies
 
@@ -310,17 +308,15 @@
               “Reinventing Public Diplomacy through Games,”
             Games For Change, New York City, NY, USA, October, 2005
 
+    .personal.page
+
     .contact.page
       .side-section
         Contact
       .main-section
-        .address
-          2546 3rd St. #1
-        .city-zip
-          San Francisco, CA 94107
-        .phone
-          415-652-2234
         .linked-in
+          %span.contact-label Linked In:
           = link_to "in/jeanmillertruelson", "http://www.linkedin.com/in/jeanmillertruelson"
         .email
+          %span.contact-label Email:
           jean[at]dogpatchtech.com

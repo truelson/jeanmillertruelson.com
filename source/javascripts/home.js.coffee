@@ -2,6 +2,7 @@ ready = ->
 
   $(".nav-link").click ->
     hash = this.hash.replace( '#', '' )
+    console.log hash
     $(".page").fadeOut( 'fast' )
       .promise()
       .done( ->
